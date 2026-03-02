@@ -9,28 +9,21 @@
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone [ваш-repo-адрес]
+   git clone https://github.com/devmanorg/django-orm-watching-storage-part-1.git
    ```
 2. Python3 должен быть уже установлен. 
 3. Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
    ```bash
    pip install -r requirements.txt
    ```
-4. Сайт не запустится без установки дополнительных библиотек: `django` и `psycopg2`.
-   ```bash
-   pip install django
-   ```
-   ```bash
-   pip install psycopg2
-   ```
-5. Создайте .env файл (запросите актуальные данные у администратора):
+4. Создайте .env файл (запросите актуальные данные у администратора):
     ```ini
-    ENGINE=django.db.backends.postgresql
-    HOST=ваш_хост
-    PORT=ваш_порт
-    NAME=имя_бд
-    USER=ваш_логин
-    PASSWORD=ваш_пароль
+    DB_ENGINE=django.db.backends.postgresql
+    DB_HOST=ваш_хост
+    DB_PORT=ваш_порт
+    DB_NAME=имя_бд
+    DB_USER=ваш_логин
+    DB_PASSWORD=ваш_пароль
     SECRET_KEY=ваш_секретный_ключ
     ```
 ### Запуск
